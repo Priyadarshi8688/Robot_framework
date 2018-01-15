@@ -5,8 +5,8 @@ Library           Selenium2Library
 Robo1
     Open Browser    https://www.facebook.com    chrome
     Maximize Browser Window
-    Input Text    xpath=//*[@id="email"]    darshi.38@gmail.com
-    Input Text    xpath=//*[@id="pass"]    Priyanka!@90
+    Input Text    xpath=//*[@id="email"]    xxxxxxxxxxx@gmail.com
+    Input Text    xpath=//*[@id="pass"]    xxxxxxxx
     Click Element    xpath=//*[@id="loginbutton"]
     Close Browser
 
@@ -23,8 +23,8 @@ Robo3
     Maximize Browser Window
     Mouse Over    xpath=//*[@id="nav-link-accountList"]
     Click Element    xpath=//*[@id="nav-flyout-ya-signin"]/a
-    Input Text    xpath=//*[@id="ap_email"]    priyadarshidash1@gmail.com
-    Input text    xpath=//*[@id="ap_password"]    qwerty1234567
+    Input Text    xpath=//*[@id="ap_email"]    xxxxxxxxxx@gmail.com
+    Input text    xpath=//*[@id="ap_password"]    xxxxxxxxxx
     Click Element    xpath=//*[@id="signInSubmit"]
     Mouse over    xpath=//*[@id="nav-link-accountList"]
     Select From List    xpath=//*[@id='searchDropdownBox']
