@@ -3,7 +3,7 @@ Library           Selenium2Library
 
 *** Test Cases ***
 Robo1
-    Open Browser    https://www.facebook.com    chrome
+    Open Browser    https://www.facebook.com    chrome               
     Maximize Browser Window
     Input Text    xpath=//*[@id="email"]    xxxxxxxxxxx@gmail.com
     Input Text    xpath=//*[@id="pass"]    xxxxxxxx
