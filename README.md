@@ -1,2 +1,2 @@
 # Robot_framework
-Automation Testing
+Automation Testing for arek web application
