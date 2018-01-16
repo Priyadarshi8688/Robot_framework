@@ -1,0 +1,33 @@
+*** Settings ***
+Library           Selenium2Library
+
+*** Test Cases ***
+Robo1
+    Open Browser    https://www.facebook.com    chrome               
+    Maximize Browser Window
+    Input Text    xpath=//*[@id="email"]    xxxxxxxxxxx@gmail.com
+    Input Text    xpath=//*[@id="pass"]    xxxxxxxx
+    Click Element    xpath=//*[@id="loginbutton"]
+    Close Browser
+
+Robo2
+    Open Browser    https://www.google.com/gmail/about/#    chrome
+    Maximize Browser Window
+    Click Element    xpath=/html/body/nav/div/a[2]
+    Input Text    xpath=//*[@id="identifierId"]    priyadarshi1.dash
+    Click Element    xpath=//*[@id="identifierNext"]/content/span
+    Close Browser
+
+Robo3
+    Open Browser    https://www.amazon.com    chrome
+    Maximize Browser Window
+    Mouse Over    xpath=//*[@id="nav-link-accountList"]
+    Click Element    xpath=//*[@id="nav-flyout-ya-signin"]/a
+    Input Text    xpath=//*[@id="ap_email"]    xxxxxxxxxx@gmail.com
+    Input text    xpath=//*[@id="ap_password"]    xxxxxxxxxx
+    Click Element    xpath=//*[@id="signInSubmit"]
+    Mouse over    xpath=//*[@id="nav-link-accountList"]
+    Select From List    xpath=//*[@id='searchDropdownBox']
+    Click Element    xpath=//*[@id='searchDropdownBox']/option[17]
+    Mouse over    xpath=//*[@id="nav-link-accountList"]
+    Close Browser
