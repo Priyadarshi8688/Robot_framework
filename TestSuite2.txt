@@ -1,0 +1,27 @@
+*** Settings ***
+Metadata          Metadata    version 2.0
+Library           Selenium2Library
+
+*** Variables ***
+${BROWSER}        ie
+${LOGIN URL}      https://www.google.com
+${DELAY}          20s
+
+*** Test Cases ***
+Robo1
+    [Setup]
+    [Template]
+    [Timeout]
+    open browser    ${LOGIN URL}    ${BROWSER}
+    Maximize browser window
+    set selenium speed    ${DELAY}
+    close
+    CaptureScreenShot
+    [Teardown]
+
+*** Key Words ***
+close
+    close browser
+
+CaptureScreenShot
+    Selenium2Library.Capture Page Screenshot
